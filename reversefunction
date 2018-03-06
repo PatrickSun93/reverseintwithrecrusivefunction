@@ -1,0 +1,15 @@
+int reverse(int a){
+	if(a/10==0){ 
+		return a;
+	}	
+	int temp=1;
+	int b=a;
+	while (b/10>0){
+		temp*=10;
+		b=b/10;
+	}
+	return a%10*temp+reverse(a/10);
+
+	
+	
+}
